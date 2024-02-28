@@ -78,7 +78,7 @@ form button:hover {
     color: black;
     font-size: 1.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     transition: 0.5s;
     border-radius: 2rem;
@@ -104,7 +104,7 @@ form button:hover {
 
 
 .trash-btn {
-    border-top-right-radius: 1.76rem;
+    border-top-right-radius: 1.75rem;
     border-bottom-right-radius: 1.75rem;
     background: rgb(171, 171, 171);
 }
@@ -115,6 +115,11 @@ form button:hover {
 }
 
 .fa-trash, .fa-check-circle {
+    pointer-events: none;
+}
+
+
+.completed {
     text-decoration: line-through;
     opacity: 0.5;
 }
