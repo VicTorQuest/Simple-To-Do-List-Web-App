@@ -98,7 +98,8 @@ form button:hover {
 }
 
 .complete-btn {
-    background: linear-gradient(to right, #2064aa, #1da1f2);
+    background: #a046f3;
+    color: white;
 }
 
 
@@ -122,4 +123,49 @@ form button:hover {
 .slide {
     transform: translateX(10rem);
     opacity: 0;
+}
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+
+select {
+    color: #a046f3;
+    width: 10rem;
+    height: 3.2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: linear-gradient(to right, #2064aa, #a046f3);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+
+.select::hover::after {
+    background: white;
+    color: #a046f3;
+
 }
